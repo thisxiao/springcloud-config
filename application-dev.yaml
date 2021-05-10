@@ -1,5 +1,5 @@
 config:
-  info: "this is i520java-cloud2020-config! it's master branch!  application-dev.yaml  version=4.0  bus amqp test!"
+  info: "this is i520java-cloud2020-config! it's master branch!  application-dev.yaml  version=5.0  bus amqp test!"
 server:
   port: 3355
 eureka:
