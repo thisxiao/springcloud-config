@@ -1,7 +1,5 @@
 config:
   info: "this is i520java-cloud2020-config! it's master branch!  application-dev.yaml  version=5.0  update file!"
-server:
-  port: 3355
 eureka:
   client:
     register-with-eureka: true #是否将自己本身注册到注册中心中
@@ -11,5 +9,5 @@ eureka:
       defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka #集群注册
 
   instance:
-    instance-id: cloud-config-client3355 #修改服务名称 ${spring.cloud.client.ip-address}:${server.port}
+    instance-id: cloud-config-client-${server.port} #修改服务名称 ${spring.cloud.client.ip-address}:${server.port}
     prefer-ip-address: true # 访问路径显示IP
